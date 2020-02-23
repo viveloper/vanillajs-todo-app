@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Noto+Sans+KR&display=swap');
+
+:root {
+  --primaryColor: #85ddae;
+  --mainGrey: rgb(197, 197, 197);
+  --mainTransition: all 0.3s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR';
+  font-family: 'Nanum Pen Script';
+}
+input[type='checkbox'] {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/* header */
+.header {
+  background: var(--primaryColor);
+}
+.header-center {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  font-size: 2.5rem;
+}
+/* end of header */
+/* todo */
+.todo {
+  background: #f0f3f5;
+  padding-top: 2rem;
+  min-height: calc(100vh - 78px);
+}
+.todo-center {
+  width: 80%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.todo-input {
+  font-family: 'Nanum Pen Script';
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 80%;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+.todo-info {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.todo-info span {
+  margin-right: 1rem;
+}
+.todo-list {
+  list-style-type: none;
+}
+.todo-list-item {
+  /* background: #d7c9aa; */
+  background: var(--primaryColor);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+}
+.completed-todo {
+  background: var(--mainGrey);
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.todo-text {
+  width: 100%;
+  margin-left: 1rem;
+}
+.btn-delete {
+  border: none;
+  outline: none;
+  background: #db2955;
+  color: white;
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+.btn-delete:hover {
+  opacity: 0.5;
+}
+/* end of todo */
